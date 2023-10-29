@@ -55,7 +55,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and push Docker images
-      uses: docker/build-push-action@v4.0.0
+      uses: docker/build-push-action@v5.0.0
       with:
         context: .
         file: dev/build/Dockerfile
@@ -172,7 +172,7 @@ jobs:
         tar -xzf $GITHUB_WORKSPACE/drop/wiki-js.tar.gz -C $GITHUB_WORKSPACE/build --exclude=node_modules
 
     - name: Build and push Docker images
-      uses: docker/build-push-action@v4.0.0
+      uses: docker/build-push-action@v5.0.0
       with:
         context: .
         file: dev/build-arm/Dockerfile
