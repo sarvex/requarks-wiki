@@ -19,7 +19,7 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set Build Variables
       run: |
@@ -92,7 +92,7 @@ jobs:
         dbtype: [postgres, mysql, mariadb, mssql, sqlite]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set Test Variables
       run: |
@@ -129,7 +129,7 @@ jobs:
             docker: armv7
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set Version Variables
       run: |
@@ -392,7 +392,7 @@ jobs:
     needs: [release]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set Version Variables
       run: |
