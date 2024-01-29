@@ -359,7 +359,7 @@ jobs:
         artifacts: 'drop/wiki-js.tar.gz,drop-win/wiki-js-windows.tar.gz'
 
     - name: Notify Slack Releases Channel
-      uses: slackapi/slack-github-action@v1.18.0
+      uses: slackapi/slack-github-action@v1.25.0
       with:
         payload: |
           {
